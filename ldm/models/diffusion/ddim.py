@@ -123,6 +123,8 @@ class DDIMSampler(object):
             img = img[0].repeat(11,1,1,1)
         else:
             img = x_T
+            img = img[0].repeat(11,1,1,1)
+
 
         if timesteps is None:
             timesteps = self.ddpm_num_timesteps if ddim_use_original_steps else self.ddim_timesteps
