@@ -120,7 +120,7 @@ class DDIMSampler(object):
         b = shape[0]
         if x_T is None:
             img = torch.randn(shape, device=device)
-            img = img[0].repeat(11,1,1,1)
+            img = img[0].repeat(22,1,1,1)
         else:
             img = x_T
             # img = img[0].repeat(11,1,1,1)
